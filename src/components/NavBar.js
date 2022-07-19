@@ -22,7 +22,7 @@ export const NavBar = () => {
             <div className="social-icon">
                 <a href="#"><img src={''} alt="" /> </a>
                 <a href="#"><img src={''} alt="" /> </a>
-                <a href="#"><img src={'a'} alt="" /> </a>
+                <a href="#"><img src={''} alt="" /> </a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span> Let's Connect</span></button>
           </span>
