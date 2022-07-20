@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navbar,Container } from "react-bootstrap";
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
+    const [scolled, seScrolled] = use(false);
+
 
   return (
     <Navbar  expand="lg">
