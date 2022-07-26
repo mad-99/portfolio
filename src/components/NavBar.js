@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
 import { Navbar,Container,Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -42,10 +42,10 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-            <a href="https://trailblazer.me/id/mad-10" target="_blank" rel="noreferrer"><img src={navIcon4} alt="" /> </a>
-                <a href="https://www.linkedin.com/in/madhur-maheshwari-8b252418b/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="" /> </a>
-                <a href="https://www.facebook.com/madhur.maheshwari.02/" target="_blank" rel="noreferrer"><img src={navIcon2} alt="" /> </a>
-                <a href="https://www.instagram.com/maheshwari_madhur_20/?hl=en" target="_blank" rel="noreferrer"><img src={navIcon3} alt="" /> </a>
+            <a href="https://trailblazer.me/id/mad-10" ><img src={navIcon4} alt="" /> </a>
+                <a href="https://www.linkedin.com/in/madhur-maheshwari-8b252418b/" ><img src={navIcon1} alt="" /> </a>
+                <a href="https://www.facebook.com/madhur.maheshwari.02/" ><img src={navIcon2} alt="" /> </a>
+                <a href="https://www.instagram.com/maheshwari_madhur_20/?hl=en" ><img src={navIcon3} alt="" /> </a>
 
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span> Let's Connect</span></button>
