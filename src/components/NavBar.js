@@ -5,6 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import navIcon4 from '../assets/img/salesforce1.png';
+import navIcon5 from '../assets/img/github1.png';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -38,11 +39,13 @@ export const NavBar = () => {
             <Nav.Link />
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() =>onUpdateActiveLink('home')} >Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() =>onUpdateActiveLink('skills')}>Skills</Nav.Link>  
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link' } onClick={() =>onUpdateActiveLink('projects')}>Projects</Nav.Link>    
+            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link' } onClick={() =>onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link' } onClick={() =>onUpdateActiveLink('projects')}>Educations</Nav.Link>    
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-            <a href="https://trailblazer.me/id/mad-10" ><img src={navIcon4} alt="" /> </a>
+                <a href="https://trailblazer.me/id/mad-10" ><img src={navIcon4} alt="" /> </a>
+                <a href="https://github.com/mad-99" ><img src={navIcon5} alt="" /> </a>
                 <a href="https://www.linkedin.com/in/madhur-maheshwari-8b252418b/" ><img src={navIcon1} alt="" /> </a>
                 <a href="https://www.facebook.com/madhur.maheshwari.02/" ><img src={navIcon2} alt="" /> </a>
                 <a href="https://www.instagram.com/maheshwari_madhur_20/?hl=en" ><img src={navIcon3} alt="" /> </a>
