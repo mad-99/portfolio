@@ -6,8 +6,8 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 
-export const Projects=() =>{
-    const projects =[
+export const Projects = () =>{
+    const projects = [
         {
             title: "Business Startup",
             description: "Design & Development",
@@ -40,14 +40,14 @@ export const Projects=() =>{
           },
     ];
     return (
-        <section className="project" id="project">
+        <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col>
                         <h2> Projects</h2>
                         <p>................................................................................</p>
                         <Tab.Container id="project-tabs" defaultActiveKey="first">
-                            <Nav variant="pills" defaultActiveKey={"/home"}>
+                            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Tab One</Nav.Link>
                                 </Nav.Item>
@@ -84,7 +84,7 @@ export const Projects=() =>{
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2} alt="">  </img>
+            <img className="background-image-right" src={colorSharp2} alt=""/>  
         </section>
     )
 }
