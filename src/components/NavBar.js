@@ -6,6 +6,8 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import navIcon4 from '../assets/img/salesforce1.png';
 import navIcon5 from '../assets/img/github1.png';
+import { HashLink } from 'react-router-hash-link';
+
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -51,7 +53,9 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/maheshwari_madhur_20/?hl=en" ><img src={navIcon3} alt="" /> </a>
 
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}><span> Let's Connect</span></button>
+            
+                <button className="contact" onClick={() =>onUpdateActiveLink('contact')}><span>Let’s Connect</span></button>
+              
           </span>
         </Navbar.Collapse>
       </Container>

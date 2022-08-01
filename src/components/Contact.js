@@ -2,14 +2,14 @@ import React,{ useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 export const Contact =() =>{
-    const fromInitialDetails ={
+    const formInitialDetails ={
         firstName:'',
         lastName:'',
         email:'',
         phone:'',
         message:''
     }
-    const [fromDetails, setFormDetails] =useState(fromInitialDetails);
+    const [formDetails, setFormDetails] =useState(formInitialDetails);
     const [buttonText, setButtonText] = useState('Send');
     const [status, setStatus] = useState({});
 
@@ -32,7 +32,7 @@ export const Contact =() =>{
         setButtonText("Send");
         let result = await response.json();
         setFormDetails(formInitialDetails);
-        if (result.code == 200) {
+        if (result.code === 200) {
           setStatus({ succes: true, message: 'Message sent successfully'});
         } else {
           setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
@@ -48,7 +48,7 @@ export const Contact =() =>{
                     </Col>
                     <Col>
                         <h2>Get In Touch</h2>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName',e.target.value)}></input>
