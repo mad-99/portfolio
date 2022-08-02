@@ -54,7 +54,7 @@ export const NavBar = () => {
 
             </div>
             
-                <button className="contact" onClick={() =>onUpdateActiveLink('contact')}><span>Let’s Connect</span></button>
+                <button className="vv"><span>Let’s Connect</span></button>
               
           </span>
         </Navbar.Collapse>
